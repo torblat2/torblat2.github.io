@@ -1,0 +1,28 @@
+	.header{
+	  		width: 600px;			
+			display: flex;
+			margin-top: 60px;
+			position: relative;
+			font-size: 20px;
+			margin:auto;
+			
+		} 
+		.body{
+			width: 600px;
+			margin: auto;
+			margin-top: 70px;
+		}
+		h1{
+			position: absolute;
+			margin-top: 15px;
+			margin-left: 80px;
+		}
+		.icon{
+			width:350px;
+			height: 350px; 
+			}
+		.icon2{
+			width: 80px;
+			height: 80px;
+		}
+
