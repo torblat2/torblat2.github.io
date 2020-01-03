@@ -36,7 +36,7 @@
     }
     .photo:hover{
     	filter: sepia(10%) drop-shadow(16px 20px 30px );
-    	transition: 1.4s;
+    	transition: 0.4s;
 
     }
 }
