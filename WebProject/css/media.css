@@ -28,8 +28,7 @@
 		fill: white;
 	}
     .buttonnew:hover{
-    	width: 150px;
-    	height: 70px;
+    	transform:scale(1.5);
     	transition:1.5s ease-out;
     	filter:drop-shadow(16px 20px 30px black);
     	
