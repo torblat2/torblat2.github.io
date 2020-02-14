@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Зарегестрироваться</title>
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Pacifico|Press+Start+2P|Ruslan+Display|Russo+One|Stalinist+One&display=swap" rel="stylesheet">
+	<script src="script.js"></script>
+</head>
+<body>
+	<h1>Привет!</h1>
+	<p><i>Пожалуйста, заполните форму. Обязательные поля помечены <em>*</em> </i></p>
+	<form onsubmit="main()">
+		<fieldset>
+			<legend>Контактная информация</legend>
+			
+			<label for="f_name">фамилия<em>*</em></label>
+			<input id="f_name" type="text" required placeholder="Иванов" ><br>
+			
+			<label for="f_name">имя<em>*</em></label>
+			<input id="name" type="text" required  placeholder="Иван" ><br>
+
+			<label for="f_name">Телефон</label>
+			<input id="phone" type="text" placeholder="79780000000" ><br>
+
+			<label for="email">E-mail<em>*</em></label>
+			<input type="email" id="email" required placeholder="pochta@gmail.com" >
+		</fieldset>
+		<fieldset>
+			<legend>Персональная информация</legend>
+
+			<label for="age">Дата рождения<em>*</em></label>
+			<input type="date"><br>
+
+			<label for="gender">Пол</label>
+			<label for="radio"><input type="radio" id="gender" name="gender" check>Мужской</label>
+			<label for="radio"><input type="radio" id="gender2" name="gender">Женский</label>
+			<label for="radio"><input type="radio" id="gender3" name="gender">Рептилоидный</label><br>
+
+			<label for="city">Ваш город</label>
+			<select name="" id="">city
+				<option value="empty" selected disabled>Выберите ваш город</option>
+				<option value="Simf">Cимферополь</option>
+				<option value="Moskow">Москва</option>
+				<option value="Piter">Питер</option>
+				<option value="Sochi">Сочи</option>
+				<option value="Ufa">Уфа</option>
+				<option value="Nnovgorod">Н.Новгород</option>
+				<option value="Kazan">Казань</option>
+				<option value="Krasnoyarsk">Красноярск</option>
+				<option value="Novosibirsk">Новосибирск</option>
+				<option value="Seva">Севастополь</option>
+				<option value="Evpatoria">Евпатория</option>
+				<option value="Dr">Другой город России</option>
+				<option value="NewY">New York</option>
+				<option value="LA">Los Angeles</option>
+				<option value="LasV">Las Vegas</option>
+				<option value="California">California</option>
+				<option value="Ot">Other cities of America</option>
+				<option value="München">München</option>
+				<option value="Berlin">Berlin</option>
+				<option value="Humbug">Hamburg</option>
+				<option value="Ad">Andere Städte in Deutschland</option>
+				<option value="World">Other cities in the world</option>
+				
+
+			</select>
+			<br>
+
+			<label for="about">Расскажите о себе</label>
+			<textarea name="" id="about" cols="30" rows="10"></textarea>
+		</fieldset>
+		<fieldset>
+		<legend>Выбери игры в которые ты играл</legend>
+		<label for="CS"><input type="checkbox" id="CS">CS:GO</label>
+		<label for="MC"><input type="checkbox" id="MC">Minecraft</label>
+		<label for="OW"><input type="checkbox" id="OW">Overwatch</label>
+		<label for="WF"><input type="checkbox" id="WF">Warface</label>
+		<label for="COD"><input type="checkbox" id="COD">Call of Duty</label>
+		<label for="WT"><input type="checkbox" id="WT">World of Tanks</label>
+		<label for="HL2"><input type="checkbox" id="HL2">Half-Life 2</label>
+		<label for="PL"><input type="checkbox" id="PL">Portal</label>
+		<label for="BF"><input type="checkbox" id="BF">Battlefield</label>
+		<label for="GTA"><input type="checkbox" id="GTA">GTA:SA</label>
+		</fieldset>
+		<p><input class="btn" type="submit" value="Отправить информацию"></p>
+	</form>
+	
+</body>
+</html>
