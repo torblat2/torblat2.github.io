@@ -1,0 +1,99 @@
+/*эти свойства применяются ко всем*/
+
+* {
+	margin:0; /*внешний отступ*/
+	padding:0;/*внутрений отступ*/
+	box-sizing:border-box;/*алгоритм расчёта размеров*/
+	-webkit-box-sizing: border-box;/*тоже самое но для других браузеров*/
+	-moz-box-sizing:border-box;		/*тоже самое но для других браузеров*/
+}
+body {
+	background-color: #eee;/*цвет фона*/
+}
+/*стили для элемента с id =""main*/
+#main{
+	background-color: #fff;	/*для фона элемента с id="main"*/
+	margin:auto;			/*одинаковые внешние отступы*/
+	display: flex;			/*отоброжение элементов в строчку*/
+	width: 99%; 			/*ширина элемента с id =""main*/
+	max-width: 1000px;		/*максимальная ширина элемента с id =""main*/
+	max-height: 1000px;		
+	box-shadow: 0 0 10px 1px rgba(0,0,0,0.3);	/*тень объекта,rgba - указание цвета и прозрачности */
+	flex-wrap: wrap;		 /*правила переноса*/
+}
+/*стили для элемента с class ="item"*/
+.item {
+	width: 100%;
+	height: 100%;
+	background-position:center;  /*расположение фона по центру блока*/
+	background-size: 100% 100%;	 /*растягиваем фоновое изоброжение по ширене элемента*/	
+	-moz-background-size:100% 100%;
+	-webkit-background-size:100% 100%;
+	transition: 0.8s ease-in;
+}
+.heading{
+	font-size: 48px;
+	text-align: center;
+	width: 100%;
+	padding :30px 0;
+	
+ 	opacity: 0;
+ 	transition: 0.8s;
+}
+.img-link{
+	display: block;
+
+	max-height: 265px;
+	max-width: 480px;
+	width: calc(50% - 10px);	/*вычисляем ширину элемента: половина род. контейнера минус 10px*/
+	height: calc(95vw / 2 /16*9);/*вычесленние высоты элементав в соотношении 16:9*/
+	margin:10px;
+}
+.item:hover{
+	transition: 1s ease-out;
+	transform: scale(1.8) rotate(10deg);		/*scale--маштубирование,rotate--крутилка(указывается в градусах)*/
+	box-shadow: 0 0 100px 100px rgba(0,0,0,10);
+	filter: drop-shadow(16px 20px 30px brown);
+
+}
+.heading:hover{
+	transition: 0.8s linear;
+	background: linear-gradient(45deg,red,yellow);
+	
+
+}
+
+@media all and (max-width: 768px) {
+	.img-link{
+		max-height: initial;
+		max-width: initial;
+		width: 95vw;
+		height: calc(95vw / 16*9);
+		margin: 5px 0;
+
+
+	}
+	@media all and (min-width: 1200px) {
+	.item:hover{
+	transition: 1s ease-out;
+	transform: scale(1.8) rotate(10deg);		/*scale--маштубирование,rotate--крутилка(указывается в градусах)*/
+	box-shadow: 0 0 100px 100px rgba(0,0,0,10);
+	filter: drop-shadow(16px 20px 30px brown);
+	}	
+	}
+
+}
+.link{
+	margin-top: 1000px;
+	text-align: center;
+	font-size: 12px;
+	color:black;
+	background-color: purple;
+	transition: 2s ease-in; 	
+}
+.link:hover{
+	transition: 2s ease-out;
+	text-transform: scale(1.8);
+	filter: drop-shadow(16px 20px 30px brown);
+	box-shadow: 0 0 100px 100px rgba(0,0,0,10);
+}
